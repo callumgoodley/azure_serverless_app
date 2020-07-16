@@ -9,7 +9,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     all_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     random_letters = ''
 
-    while len(random_letters) > 5:
+    while len(random_letters) < 5:
         random_letters += random.choice(all_letters)
 
     return random_letters
